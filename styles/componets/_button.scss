@@ -1,0 +1,13 @@
+.voltar {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    button {
+        font-weight: bold;
+        border: none;
+        color: $cor-de-titulo;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+}

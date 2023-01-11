@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Manipulação do DOM</title>
+</head>
+<body>
+    <div class="fundo">
+        <header>
+            <img src="./img/rocket.png" />
+            <h1 class="header-text">
+                To <span class="white">do</span> List.
+            </h1>
+        </header>
+        <main class="container">
+            <div class="formulario"> 
+                <form method="">
+                    <input type="text" id="input-texto" class="input">
+                    <button value="adicionar" onclick="getValueForm(event)">Criar</button>
+                </form>
+            </div>
+            <div formulario-editar>
+                <form method="">
+                    <label tarefa></label>
+                    <input type="text" id="input-texto-editar" class="input">
+                    <button id="botao-editar" onclick="getValueForm(event)">Editar</button>
+                </form>
+            </div>
+            <div lista>
+                <div class="tarefas-criadas">
+                    <p>Tarefas criadas <span class="texto-info tarefas-total">0</span></p>
+                    <p class="right">Concluídas <span class="texto-info"><span id="tarefas-feitas">0</span> de <span class="tarefas-total">0</span></span></p>
+                </div>
+                <div class="margin"></div>
+            </div>
+        </main>
+        <!-- <div class="voltar">
+            <button>Voltar</button>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

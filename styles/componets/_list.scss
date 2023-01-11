@@ -1,0 +1,72 @@
+@import '../abstract/variables';
+
+.container {
+    [lista] {
+        margin-top: 10px;
+        width: 800px;
+        margin-top: 50px;
+        color: white;
+        .margin {
+           padding-top: 50px;
+        }
+        .tarefas-criadas {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgb(39, 39, 39);
+            p {
+                font-family: $fonte-principal;
+                font-size: 0.9em;
+                width: 40%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 5px;
+                color: $cor-de-titulo;
+                font-weight: bold;
+                .texto-info {
+                    margin-left: 10px;
+                    color: white;
+                    background: #292828;
+                    padding: 5px;
+                }
+            }    
+            .right {
+                justify-content: flex-end;
+                color: white;
+            }
+        }
+        .tarefas {
+            display: flex;
+            padding: 10px;
+            background-color: #292828;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            p{
+                font-family: $fonte-principal;
+                width: 70%;
+                padding: 5px;
+                text-align: left;
+                .concluida {
+                    margin-right: 20px;
+                }
+            }
+            .button-action {
+                display: flex;
+                width: 30%;
+                justify-content: flex-end;
+                button {
+                    border: white;
+                    padding: 5px;
+                    width: 80px;
+                    color: white;
+                    background-color: $cor-de-titulo;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+}
